@@ -59,4 +59,4 @@ def restore(image):
 
 examples=[os.path.join(os.path.dirname(__file__), f"images/{i}.jpg") for i in range(1, 11)]
 interface = gr.Interface(fn=restore, inputs="image", outputs="image", title="Image Restoration with DA-CLIP", examples=examples)
-interface.launch()
+interface.launch(share=True)
